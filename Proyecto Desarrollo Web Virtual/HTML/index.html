@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniNotas - Recursos Académicos EAN</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>UniNotas</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#explorar">Explorar Recursos</a></li>
+                <li><a href="#subir">Subir Recurso</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar apuntes...">
+            <button>Buscar</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a UniNotas</h2>
+            <p>Encuentra y comparte apuntes, trabajos y resúmenes de la Universidad EAN.</p>
+        </section>
+
+        <section id="explorar">
+            <h2>Explorar Recursos</h2>
+            <div class="recursos">
+                </div>
+        </section>
+
+        <section id="subir">
+            <h2>Subir Recurso</h2>
+            <form id="formulario-subida">
+                <label for="titulo">Título del Apunte:</label>
+                <input type="text" id="titulo" name="titulo" required><br>
+
+                <label for="carrera">Carrera:</label>
+                <select id="carrera" name="carrera" required>
+                    <option value="">Seleccionar Carrera</option>
+                    </select><br>
+
+                <label for="asignatura">Asignatura:</label>
+                <select id="asignatura" name="asignatura" required>
+                    <option value="">Seleccionar Asignatura</option>
+                    </select><br>
+
+                <label for="archivo">Archivo (PDF, Word):</label>
+                <input type="file" id="archivo" name="archivo" accept=".pdf,.doc,.docx" required><br>
+
+                <button type="submit">Subir</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 UniNotas - Universidad EAN</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
