@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subir Recurso | UniNotas EAN</title>
+  <link rel="stylesheet" href="../CSS/subirarchivos.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>UniNotas EAN</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="explorar.html">Explorar</a>
+        <a href="subir.html" class="active">Subir</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Sube tus apuntes</h2>
+    <form class="form" id="formulario-subida">
+      <input type="text" id="titulo" name="titulo" autocomplete="titulo" placeholder="Título del documento" required />
+      <input type="text" id="carrera" name="carrera" autocomplete="carrera" placeholder="Carrera" required />
+      <input type="text" id="asignatura" name="asignatura" autocomplete="asignatura" placeholder="Asignatura"
+        required />
+      <input type="file" required />
+      <button type="submit">Subir</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 UniNotas EAN.</p>
+  </footer>
+
+  <script src="../JS/subirarchivos.js"></script>
+
+</body>
+
+</html>
