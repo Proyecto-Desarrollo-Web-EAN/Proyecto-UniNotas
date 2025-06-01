@@ -7,12 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         recursos.forEach(function (recurso) {
             const contenido = recurso.innerText.toLowerCase();
-
-            if (contenido.includes(texto)) {
-                recurso.style.display = "";
-            } else {
-                recurso.style.display = "none";
-            }
+            recurso.style.display = contenido.includes(texto) ? "" : "none";
         });
+
+        buscarLibros(texto);
     });
 });
