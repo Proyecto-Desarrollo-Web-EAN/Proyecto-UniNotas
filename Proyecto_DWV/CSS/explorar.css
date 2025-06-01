@@ -91,3 +91,15 @@ footer {
   font-size: 0.9em;
   margin-top: 100px;
 }
+
+#resultados-libros {
+  margin-top: 20px;
+}
+
+.libro {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
